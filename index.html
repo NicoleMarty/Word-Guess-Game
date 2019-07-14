@@ -10,27 +10,45 @@
 
 <body>
     <div class="container">
-        <img id="header-image" src="assets/images/bad-girls-header.jpg" alt="Bad Girls of History" class="img-fluid" style="width:50%">
+        <img id="header-image" src="assets/images/bad-girls-header.jpg" alt="Bad Girls of History" class="img-fluid mx-auto" style="width:100%">
     </div>
-    <!--bootstrap row with columns-->
+
+    <!--start new container
     <div class="container">
         <div class="row">
-            <!--at large+ screens take up half width (6/12)-->
             <div class="col-lg-6">
-                <!--centered image with thumbnail rules-->
-                <img class="img thumbnail center-block" src="assets/images/corset-bad-gal.jpg">
+                <img class="img thumbnail" src="assets/images/corset-bad-gal.jpg">
                 <p>You escaped!...this time.</p>
             </div>
-            <!--at large+ screens takes up half width (6/12)-->
-            <div class="col-lg-6">
+            <div class="col-lg-6 mx-auto">
                 <p>Asymmetrical lumbersexual schlitz polaroid, fashion axe ethical keytar forage +1 mixtape. Glossier hot chicken activated charcoal, photo booth vegan poke celiac godard. Letterpress sriracha echo park fam air plant man bun. Celiac brunch
                     cronut hexagon, cardigan iPhone craft beer tumblr narwhal pabst mixtape green juice microdosing pop-up venmo. Oh. You need a little dummy text for your mockup? How quaint. I bet you’re still using Bootstrap too…</p>
             </div>
         </div>
+    </div>-->
 
+
+    <div class="container">
+        <div class="row mx-md-n3">
+            <div class="col pl-md-3">
+                <div class="p3 border bg-light">
+                    <img id="side-image" class="img thumbnail" src="assets/images/corset-bad-gal.jpg">
+                    <p>You escaped!...this time.</p>
+                </div>
+            </div>
+            <div class="col px-md-3">
+                <div class="p3 border bg-light">
+                    <p>Asymmetrical lumbersexual schlitz polaroid, fashion axe ethical keytar forage +1 mixtape. Glossier hot chicken activated charcoal, photo booth vegan poke celiac godard. Letterpress sriracha echo park fam air plant man bun. Celiac brunch</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!--path to js file-->
     <script src="assets/javascript/game.js"></script>
+    <!--bootstrap's js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 
 </html>
