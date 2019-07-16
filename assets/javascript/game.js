@@ -17,6 +17,22 @@ while ((remainingLetters > 0) && (remainingGuesses !== 0)) {
     document.getElementById("answer-array") = innerHTML(answerArray.join(" "));
 
     // When user presses key...
+    //create another loop to run each time the user guesses a letter to check if the choice matches any of the _ in word
+    for (var k = 0; k < word.length; k++) {
+        if (word[k] === choice) {
+            answerArray[k] = choice;
+            remainingLetters--;
+            // decrease remainingGuesses
+            // add choice to letterGuessesd
+        }
+    }
+}
+
+// if remaining letters === 0
+
+
+// if remaining guesses === 0
+
 
 
 }
