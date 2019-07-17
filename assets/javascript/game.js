@@ -14,9 +14,9 @@ var userGuessElement = document.getElementById("userGuess");
 var computerOptions = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
 // When user presses key...
 document.onkeyup = function(event) {
-        var userGuess = event.key;
         // Tell computer to choose a random word from var words
         var computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+        var userGuess = event.key;
     }
     // Create array to be filled by random word on a loop
 var computerArray = [];
