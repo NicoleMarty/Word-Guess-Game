@@ -1,7 +1,23 @@
 // Set variables
 var directionsText = document.getElementById("directions-text");
 
-var computerOptions = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
+var names = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
+console.log("First statement");
+console.log(names[0]);
+console.log(names[1]);
+console.log(names[2]);
+console.log(names[3]);
+
+names[0] = ["_", "_", "_", "_", "_", "_", "_", "_"];
+names[1] = ["_", "_", "_", "_", "_", "_"];
+names[2] = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
+names[3] = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
+
+console.log("Second statement");
+console.log(names[0]);
+console.log(names[1]);
+console.log(names[2]);
+console.log(names[3]);
 
 
 var userGuess;
@@ -18,7 +34,7 @@ var wins = 0;
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 
-var wordChoiceElement = document.getElementById("word-choice");
+var userGuessElement = document.getElementById("user-guess");
 document.onkeyup = function(event) {
-    wordChoiceElement.textContent = event.key;
+    userGuessElement.textContent = event.key;
 };
