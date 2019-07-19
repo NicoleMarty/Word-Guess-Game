@@ -1,50 +1,48 @@
 // Variables
 var userGuess;
-var allowedGuesses;
-var computerChoice;
-var computerArray;
 var remainingLetters;
 
-var computerOptions = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
-var wordChoiceElement = document.getElementById('wordChoice');
-var letterCountElement = document.getElementById("letterCount");
-var userGuessElement = document.getElementById("userGuess");
+//Each element of the array is marked by an index. Indexes always start with 0.
+//Can be made up of other arrays and objects.
+var nameArray = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
+// ex: cleopatra=index[0]
+var nameArrayValues = ["_"]
 
-// Creates an array that lists out all of the options for computer generated words.
-var computerOptions = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
-// When user presses key...
+var allowedGuesses = 12;
+var wins = 1;
+
+var currentNameElement = document.getElementById("current-name");
+var userGuessElement = document.getElementById("letters-guessed");
+var winsElement = document.getElementById("wins-count");
+var allowedGuessesElement = document.getElementById("remaining-guesses");
+
+// used to tell when user wins
+var letterCountElement = document.getElementById("remaining-letters");
+
+// for loop 
+// variable declaration or counter (iterator)
+//loop condition
+//iteration (addition)
 document.onkeyup = function(event) {
-        // Tell computer to choose a random word from var words
-        var computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
-        var userGuess = event.key;
-    }
-    // Create array to be filled by random word on a loop
-var computerArray = [];
-for (var i = 0; i < computerOptions.length; i++) {
-    computerArray[i] = "_";
+    var userGuess = event.key;
+    userGuessElement.innerHTML = userGuess;
 }
-var remainingLetters = computerOptions.length;
+var nameArray = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
+document.onkeyup = function(event) {
+    var userGuess = event.key;
+    var currentName = nameArray[Math.floor(Math.random() * nameArray.length)];
+    for (var i = 1; i < currentName.length; i++) {
+        console.log(currentName[i]);
+        if (currentName[i] === "cleopatra"); {
+            currentNameElement.innerHTML = ["_", "_", "_", "_", "_", "_", "_", "_", "_"];
+        }
+        if (currentName[i] === "malala"); {
+            currentNameElement.innerHTML = ["_", "_", "_", "_", "_", "_"];
 
-// While loop to make sure keeps looping as long as long as there are more letters to guess and remaining guesses !== 0
-while (remainingLetters > 0) {
-    // Show progress on word throughout the time user making guesses
-    document.getElementById("answer-array").innerHTML(answerArray.join(" "));
-
-    // Create another loop to run each time the user guesses a letter to check if the choice matches any of the _ in word
-    for (var k = 0; k < word.length; k++) {
-        if (word[k] === choice) {
-            answerArray[k] = choice;
-            remainingLetters--;
-
-            // decrease remainingGuesses
-            // add choice to letterGuessesd
+        }
+        if (currentName[i] === "marie antoinette"); {
+            currentNameElement.innerHTML = ["marie" + "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
         }
     }
+
 }
-
-
-
-// if remaining letters === 0
-
-
-// if remaining guesses === 0
