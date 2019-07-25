@@ -1,3 +1,5 @@
+console.log("page loaded");
+
 var userGuess;
 var remainingLetters;
 
@@ -20,17 +22,15 @@ var letterCountElement = document.getElementById("remaining-letters");
 var nameArray = ["cleopatra", "malala", "marie antoinette", "harriet tubman"];
 var name = Math.floor(Math.random() * nameArray.length);
 var nameChoice = nameArray[name];
-for (var i = 0; i < nameChoice.length; i++) {
+console.log(nameChoice);
 
-    if (nameChoice === "cleopatra"); {
-        currentNameElement.innerhtml = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
-    }
-
-    if (nameChoice === "malala"); {
-        currentNameElement.innerHTML = ["_", "_", "_", "_", "_", "_"];
-    }
-
-    if (nameChoice === "marie antoinette"); {
-        currentNameElement.innerHTML = ["marie" + "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
-    }
+// for loop to change the words into underscores
+if (nameChoice === "cleopatra") {
+    currentNameElement.textContent = ["_ _ _ _ _ _ _ _ _"];
+} else if (nameChoice === "malala") {
+    currentNameElement.innerHTML = ["_ _ _ _ _ _"];
+} else if (nameChoice === "marie antoinette") {
+    currentNameElement.innerHTML = ["marie _ _ _ _ _ _ _ _ _ _"];
+} else if (nameChoice === "harriet tubman") {
+    currentNameElement.innerHTML = ["_ _ _ _ _ _ t _ _ _ _ _ _"];
 }
