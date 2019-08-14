@@ -24,13 +24,14 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <p id="instructions" class="lead">Press any key to start</p>
-                        <p class="lead">Guess the Bad Girl's Name</p>
+                        <p id="instructions" class="lead">Input any letter key in the box below to guess the bad girl.</p>
+                        <input type="text" id="user-guess" onkeyup="myFunction()">
+                        <br></br>
                         <p id="current-choice"></p>
                         <p class="lead">Guesses Remaining</p>
                         <p id="guesses-num"></p>
                         <p class="lead">Letters Guessed</p>
-                        <p id="letters-guessed"></p>
+                        <p><span id="letters-guessed"></span></p>
                     </div>
                 </div>
             </div>
