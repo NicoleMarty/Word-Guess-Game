@@ -11,44 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
-<body style="background-color:#000000">
-    <div class="container" style="padding:0px">
-        <img id="header-image" src="assets/images/bad-girls-header.jpg" alt="Bad Girls of History" class="img-fluid mx-auto" style="width:100%">
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Bad Girls of History</h1>
+            <p class="lead">A well behaved women rarely makes history.</p>
+        </div>
     </div>
 
-    <div class="container" style="border-bottom: 1px solid #000000;padding: 0px">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="card" style="background-color: #000000">
-                    <div class="card-body p-0">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="border: 0px;background-color: #000000;color:#ffffff;">
+            <div class="col-md-6">
+                <div class="card">
                     <div class="card-body">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="border: 0px;background-color:#000000;color:#ffffff;">
-                    <div class="card-body">
-                        <p id="game-directions">Press any key to start.</p>
-                        <p>Wins</p>
-                        <p id="wins-count"></p>
-                        <p>Current Name</p>
-                        <p id="current-name"></p>
-                        <p>Remaining Guesses</p>
-                        <p id="remaining-guesses"></p>
-                        <p>Letters Guessed</p>
+                        <p id="instructions" class="lead">Press any key to start</p>
+                        <p class="lead">Guess the Bad Girl's Name</p>
+                        <p id="current-choice"></p>
+                        <p class="lead">Guesses Remaining</p>
+                        <p id="guesses-num"></p>
+                        <p class="lead">Letters Guessed</p>
                         <p id="letters-guessed"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="background-color:#000000">
-                    <div class="card-body p-0">
                     </div>
                 </div>
             </div>
@@ -57,10 +39,10 @@
 
 
 
-    <!--path to js file-->
+
     <!--bootstrap's js file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-
+    <!--path to js file-->
     <script src="assets/javascript/game.js "></script>
 
 </body>
